@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact - AgriCulture Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon1.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="contact-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="AgriCulture">
+        <!-- <h1 class="sitename">AgriCulture</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="upload.html">Upload Image</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+<div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+  <div class="container position-relative">
+    <h1>Contact</h1>
+    <p>Home / Contact</p>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">Contact</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- End Page Title -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Updated Google Map -->
+  <div class="mb-5">
+    <iframe style="width: 100%; height: 400px;" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.009123456789!2d79.3840123!3d10.9601234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5534abcd1234%3A0x123456789abcd!2sSASTRA%20University%20SRC%20Campus%2C%20Kumbakonam!5e0!3m2!1sen!2sin!4v1700000000000"
+      frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+  </div><!-- End Google Maps -->
+
+  <div class="container" data-aos="fade">
+    <div class="row gy-5 gx-lg-5">
+
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="info">
+          <h3>Get in Touch</h3>
+          <p>Reach out to us for project queries, collaborations, or support!</p>
+
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h4>Location:</h4>
+              <p>SASTRA University, SRC Campus, Kumbakonam, Tamil Nadu, India</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h4>Email:</h4>
+              <p>hmhdshafeeq@gmail.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="bi bi-phone flex-shrink-0"></i>
+            <div>
+              <h4>Call:</h4>
+              <p>+91 91503 73948</p>
+            </div>
+          </div><!-- End Info Item -->
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+<div class="col-lg-8">
+  <form action="https://formspree.io/f/xldwndwg" method="POST" class="php-email-form">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="col-md-6 form-group mt-3 mt-md-0">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+    </div>
+    <div class="form-group mt-3">
+      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+    </div>
+    <div class="form-group mt-3">
+      <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div class="my-3">
+      <div class="loading" style="display:none;">Loading...</div>
+      <div class="error-message" style="color:red; display:none;">Something went wrong!</div>
+      <div class="sent-message" style="color:green; display:none;">Your message has been sent. Thank you!</div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
+<!-- End Contact Form Section -->
+
+
+    </div>
+  </div>
+</section><!-- /Contact Section -->
+
+
+   
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Agri.AI</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>SASTRA Deemed University</p>
+            <p>SRC Campus, Kumbakonam, Tamil Nadu, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 91503 73948</span></p>
+            <p><strong>Email:</strong> <span>agri.ai@gmail.com</span></p>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Pest Detection</a></li>
+            <li><a href="services.html">Disease Management</a></li>
+            <li><a href="services.html">AI Crop Analysis</a></li>
+            <li><a href="services.html">Farmer Support</a></li>
+            <li><a href="services.html">Smart Agriculture</a></li>
+          </ul>
+        </div>
+
+        <!-- Extra Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://scholar.google.com">Research Papers</a></li>
+            <li><a href="https://rapidapi.com/">APIs Used</a></li>
+            <li><a href="https://github.com/mohd-shafeeq/agri.ai">Documentation</a></li>
+            <li><a href="https://github.com/mohd-shafeeq/agri.ai">GitHub Repository</a></li>
+            <li><a href="#">Project Updates</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Access</h4>
+          <ul>
+            <li><a href="upload.html">Upload Image</a></li>
+            <li><a href="about.html">Team</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright text-center">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+      <div class="d-flex flex-column align-items-center align-items-lg-start">
+        <div>
+          © Copyright <strong><span>Agri.AI</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Agri.AI Team</a>
+        </div>
+      </div>
+
+      <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/share/1BPUib1nFg/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/_.shafeeq?igsh=MTFldXF1YmVxbDY4eA=="><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mohd-shafeeq?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Upload Image - AI Agriculture</title>
+  <link href="assets/img/favicon1.jpg" rel="icon">
+
+  <!-- ======= SAME CSS AS TEMPLATE ======= -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Upload Section Styling */
+    .upload-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+    }
+    .upload-box {
+      border: 2px dashed #4CAF50;
+      padding: 40px;
+      border-radius: 15px;
+      background: #f9fff9;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .upload-box:hover {
+      background: #ecffec;
+    }
+    .upload-box i {
+      font-size: 50px;
+      color: #4CAF50;
+    }
+    .preview-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      display: none;
+    }
+    .spinner-border {
+      margin-top: 20px;
+      display: none;
+    }
+    .result-box {
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= SAME HEADER AS TESTIMONIALS ======= -->
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="AgriCulture">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="upload.html" class="active">Upload Image</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= PAGE TITLE ======= -->
+    <div class="page-title dark-background" style="background-image: url('assets/img/page-title-bg.jpg');">
+      <div class="container position-relative">
+        <h1>Upload Image</h1>
+        <p>Detect pests and diseases in your crops using AI-powered analysis.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Upload</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- End Page Title -->
+
+    <!-- ======= UPLOAD SECTION ======= -->
+    <section id="upload" class="upload section">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="upload-card">
+              <h2 class="mb-4">Upload Your Crop Image</h2>
+              <p class="mb-4">Select a clear image of your crop or plant. Our AI will analyze it for pests and diseases.</p>
+
+              <div class="upload-box mb-4" onclick="document.getElementById('fileInput').click();">
+                <i class="bi bi-cloud-upload"></i>
+                <p class="mt-3">Click or Drag & Drop your image here</p>
+              </div>
+
+              <input type="file" id="fileInput" name="crop-image" accept="image/*" class="form-control mb-3" style="display:none;">
+              <img id="preview" class="preview-img" alt="Preview">
+
+              <button id="analyzeBtn" class="btn btn-success w-100">Analyze Image</button>
+
+              <div class="spinner-border text-success" role="status" id="loadingSpinner"></div>
+
+              <!-- Result Box -->
+              <div class="result-box mt-4 p-3 border rounded" id="resultBox">
+                <h5>AI Analysis Result:</h5>
+                <p><strong>Disease Detected:</strong> <span id="diseaseName">None</span></p>
+                <p><strong>Confidence:</strong> <span id="confidence">0%</span></p>
+                <p><strong>Suggested Treatment:</strong> <span id="treatment">N/A</span></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Upload Section -->
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+
+
+  <footer id="footer" class="footer dark-background">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Agri.AI</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>SASTRA Deemed University</p>
+            <p>SRC Campus, Kumbakonam, Tamil Nadu, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 91503 73948</span></p>
+            <p><strong>Email:</strong> <span>agri.ai@gmail.com</span></p>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html">Pest Detection</a></li>
+            <li><a href="services.html">Disease Management</a></li>
+            <li><a href="services.html">AI Crop Analysis</a></li>
+            <li><a href="services.html">Farmer Support</a></li>
+            <li><a href="services.html">Smart Agriculture</a></li>
+          </ul>
+        </div>
+
+        <!-- Extra Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+  <h4>Resources</h4>
+  <ul>
+    <li><a href="https://scholar.google.com" target="_blank">Research Papers</a></li>
+    <li><a href="https://rapidapi.com/" target="_blank">APIs Used</a></li>
+    <li><a href="https://github.com/mohd-shafeeq/agri.ai" target="_blank">Documentation</a></li>
+    <li><a href="https://github.com/mohd-shafeeq/agri.ai" target="_blank">GitHub Repository</a></li>
+    <li><a href="#" target="_blank">Project Updates</a></li>
+  </ul>
+</div>
+
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Access</h4>
+          <ul>
+            <li><a href="upload.html">Upload Image</a></li>
+            <li><a href="about.html">Team</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright text-center">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+      <div class="d-flex flex-column align-items-center align-items-lg-start">
+        <div>
+          © Copyright <strong><span>Agri.AI</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="#">Agri.AI Team</a>
+        </div>
+      </div>
+
+      <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+         <a href="https://www.facebook.com/share/1BPUib1nFg/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/_.shafeeq?igsh=MTFldXF1YmVxbDY4eA=="><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mohd-shafeeq?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+  <!-- End Footer -->
+
+  <!-- ======= JS FILES ======= -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    AOS.init();
+
+    const fileInput = document.getElementById('fileInput');
+    const preview = document.getElementById('preview');
+    const analyzeBtn = document.getElementById('analyzeBtn');
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    const resultBox = document.getElementById('resultBox');
+
+    fileInput.addEventListener('change', () => {
+      const file = fileInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = e => {
+          preview.src = e.target.result;
+          preview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    analyzeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (!fileInput.files[0]) {
+        alert('Please upload an image first!');
+        return;
+      }
+      loadingSpinner.style.display = 'inline-block';
+      resultBox.style.display = 'none';
+
+      // Simulate backend analysis
+      setTimeout(() => {
+        loadingSpinner.style.display = 'none';
+        document.getElementById('diseaseName').innerText = 'Early Blight';
+        document.getElementById('confidence').innerText = '95%';
+        document.getElementById('treatment').innerText = 'Spray Neem Oil every 7 days.';
+        resultBox.style.display = 'block';
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
+
+
