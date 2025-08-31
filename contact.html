@@ -118,20 +118,24 @@
 
       <!-- Contact Form Section -->
 <div class="col-lg-8">
-  <form action="https://formspree.io/f/xldwndwg" method="POST" class="php-email-form">
-    <div class="row">
-      <div class="col-md-6 form-group">
-        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-      </div>
-      <div class="col-md-6 form-group mt-3 mt-md-0">
-        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-      </div>
+ <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="php-email-form">
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
     </div>
-    <div class="form-group mt-3">
-      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+    <div class="col-md-6 form-group mt-3 mt-md-0">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
     </div>
-    <div class="form-group mt-3">
-      <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+  </div>
+  <div class="form-group mt-3">
+    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+  </div>
+  <div class="form-group mt-3">
+    <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+  </div>
+  <div class="text-center"><button type="submit">Send Message</button></div>
+</form>
+
     </div>
 
     <!-- Success/Error Messages -->
