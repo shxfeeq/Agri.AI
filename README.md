@@ -86,7 +86,7 @@ Homepage	Upload Feature	Detection Results
 
 🔗 Live Demo
 
-🌐 Website: https://your-username.github.io/agri.ai/
+🌐 Website: [Agri.AI](https://shxfeeq.github.io/Agri.AI/)
 📂 GitHub Repo: Agri.AI
 
 
